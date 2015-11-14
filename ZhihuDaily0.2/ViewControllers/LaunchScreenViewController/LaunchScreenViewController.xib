@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchScreenViewController">
+            <connections>
+                <outlet property="logoImageView" destination="8Bo-vC-lyr" id="VFS-WJ-4tk"/>
+                <outlet property="startImageView" destination="0Cm-C5-Flk" id="nfe-9J-e74"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Cm-C5-Flk">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash_Logo_Plus" translatesAutoresizingMaskIntoConstraints="NO" id="8Bo-vC-lyr">
+                    <rect key="frame" x="0.0" y="582" width="414" height="154"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8Bo-vC-lyr" secondAttribute="height" multiplier="207:77" id="K9Z-tp-hGs"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0Cm-C5-Flk" secondAttribute="bottom" id="62g-jo-Hsf"/>
+                <constraint firstItem="0Cm-C5-Flk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6nI-pT-FWG"/>
+                <constraint firstItem="8Bo-vC-lyr" firstAttribute="top" secondItem="0Cm-C5-Flk" secondAttribute="bottom" id="ASM-Pc-8IQ"/>
+                <constraint firstAttribute="trailing" secondItem="0Cm-C5-Flk" secondAttribute="trailing" id="TW8-VG-38Z"/>
+                <constraint firstItem="8Bo-vC-lyr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iOv-VL-JcD"/>
+                <constraint firstAttribute="bottom" secondItem="8Bo-vC-lyr" secondAttribute="bottom" id="nqp-Si-n4u"/>
+                <constraint firstAttribute="trailing" secondItem="8Bo-vC-lyr" secondAttribute="trailing" id="pMm-dA-Ffw"/>
+                <constraint firstItem="0Cm-C5-Flk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uf8-tZ-ijk"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ASM-Pc-8IQ"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="Splash_Logo_Plus" width="768" height="285"/>
+    </resources>
+</document>

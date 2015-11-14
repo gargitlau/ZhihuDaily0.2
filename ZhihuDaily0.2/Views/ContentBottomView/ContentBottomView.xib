@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Nxy-1M-AvT" customClass="ContentBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkQ-Rn-F8U">
+                    <rect key="frame" x="0.0" y="9" width="83" height="22"/>
+                    <state key="normal" image="Dark_News_Arrow"/>
+                    <state key="highlighted" image="Dark_News_Arrow_Highlight"/>
+                    <connections>
+                        <action selector="btnClick:" destination="Nxy-1M-AvT" eventType="touchUpInside" id="QZb-wU-2WJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uC-4L-SbV">
+                    <rect key="frame" x="83" y="-2" width="82.5" height="43"/>
+                    <state key="normal" image="News_Navigation_Next"/>
+                    <state key="highlighted" image="News_Navigation_Next_Highlight"/>
+                    <connections>
+                        <action selector="btnClick:" destination="Nxy-1M-AvT" eventType="touchUpInside" id="nSV-mv-0dJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEG-b7-AE1">
+                    <rect key="frame" x="165" y="-2" width="83" height="43"/>
+                    <state key="normal" image="News_Navigation_Vote"/>
+                    <state key="highlighted" image="News_Navigation_Vote"/>
+                    <connections>
+                        <action selector="btnClick:" destination="Nxy-1M-AvT" eventType="touchUpInside" id="wAY-Sv-rjp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrs-jo-HCs">
+                    <rect key="frame" x="248" y="-2" width="82.5" height="43"/>
+                    <state key="normal" image="News_Navigation_Share"/>
+                    <state key="highlighted" image="News_Navigation_Share_Highlight"/>
+                    <connections>
+                        <action selector="btnClick:" destination="Nxy-1M-AvT" eventType="touchUpInside" id="Jad-81-U3S"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLx-69-1lw">
+                    <rect key="frame" x="331" y="-2" width="83" height="43"/>
+                    <state key="normal" image="News_Navigation_Comment"/>
+                    <state key="highlighted" image="News_Navigation_Comment_Highlight"/>
+                    <connections>
+                        <action selector="btnClick:" destination="Nxy-1M-AvT" eventType="touchUpInside" id="7PN-fb-Jse"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHt-9n-fcZ">
+                    <rect key="frame" x="374" y="4" width="15" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="A5b-hD-ykO"/>
+                        <constraint firstAttribute="height" constant="14" id="hm0-Uf-jfe"/>
+                        <constraint firstAttribute="width" constant="15" id="sgh-nn-Ofe"/>
+                        <constraint firstAttribute="height" constant="14" id="srS-vF-1C0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="A5b-hD-ykO"/>
+                            <exclude reference="hm0-Uf-jfe"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROW-7W-PhN">
+                    <rect key="frame" x="208" y="3" width="20" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="Cwk-wC-LlO"/>
+                        <constraint firstAttribute="width" constant="20" id="HF4-wH-ahF"/>
+                        <constraint firstAttribute="height" constant="14" id="d2H-5C-Wu7"/>
+                        <constraint firstAttribute="width" constant="20" id="hRg-QC-qhx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Cwk-wC-LlO"/>
+                            <exclude reference="hRg-QC-qhx"/>
+                        </mask>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UK4-GA-IeO">
+                    <rect key="frame" x="206" y="0.0" width="0.0" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="FI2-aL-WJU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xes-aA-Hh1">
+                    <rect key="frame" x="372.5" y="0.0" width="0.0" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="92u-PL-Rod"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="HXe-us-Ogb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fEG-b7-AE1" firstAttribute="centerY" secondItem="Nxy-1M-AvT" secondAttribute="centerY" id="02o-0T-qcl"/>
+                <constraint firstItem="ROW-7W-PhN" firstAttribute="leading" secondItem="fEG-b7-AE1" secondAttribute="trailing" constant="-40.5" id="1Hq-Ua-89x"/>
+                <constraint firstItem="UK4-GA-IeO" firstAttribute="centerX" secondItem="fEG-b7-AE1" secondAttribute="centerX" id="4mp-6q-hGc"/>
+                <constraint firstItem="iHt-9n-fcZ" firstAttribute="leading" secondItem="Xes-aA-Hh1" secondAttribute="trailing" constant="1.5" id="5zG-a8-R6D"/>
+                <constraint firstItem="Rrs-jo-HCs" firstAttribute="centerY" secondItem="Nxy-1M-AvT" secondAttribute="centerY" id="7yb-tw-299"/>
+                <constraint firstItem="iHt-9n-fcZ" firstAttribute="leading" secondItem="Rrs-jo-HCs" secondAttribute="trailing" constant="43" id="CER-mQ-dJM"/>
+                <constraint firstItem="iHt-9n-fcZ" firstAttribute="leading" secondItem="Xes-aA-Hh1" secondAttribute="trailing" constant="1.5" id="HMC-an-QlO"/>
+                <constraint firstAttribute="bottom" secondItem="UK4-GA-IeO" secondAttribute="bottom" id="KOm-R0-aKF"/>
+                <constraint firstItem="BLx-69-1lw" firstAttribute="leading" secondItem="Rrs-jo-HCs" secondAttribute="trailing" id="Llg-ph-qwu"/>
+                <constraint firstItem="nkQ-Rn-F8U" firstAttribute="leading" secondItem="Nxy-1M-AvT" secondAttribute="leading" id="MO0-Cv-smc"/>
+                <constraint firstItem="5uC-4L-SbV" firstAttribute="leading" secondItem="nkQ-Rn-F8U" secondAttribute="trailing" id="MyK-BB-LpH"/>
+                <constraint firstAttribute="trailing" secondItem="iHt-9n-fcZ" secondAttribute="trailing" constant="25" id="NDl-XI-bjh"/>
+                <constraint firstItem="nkQ-Rn-F8U" firstAttribute="centerY" secondItem="Nxy-1M-AvT" secondAttribute="centerY" id="NLh-Zb-GOk"/>
+                <constraint firstItem="fEG-b7-AE1" firstAttribute="width" secondItem="nkQ-Rn-F8U" secondAttribute="width" id="Nft-P8-VPf"/>
+                <constraint firstItem="BLx-69-1lw" firstAttribute="top" secondItem="iHt-9n-fcZ" secondAttribute="bottom" constant="-19" id="O1r-Ha-fEk"/>
+                <constraint firstItem="Rrs-jo-HCs" firstAttribute="leading" secondItem="fEG-b7-AE1" secondAttribute="trailing" id="Qa3-kO-oUK"/>
+                <constraint firstItem="BLx-69-1lw" firstAttribute="width" secondItem="nkQ-Rn-F8U" secondAttribute="width" id="R45-9F-qwU"/>
+                <constraint firstItem="BLx-69-1lw" firstAttribute="leading" secondItem="Rrs-jo-HCs" secondAttribute="trailing" constant="38" id="VcS-qz-c5v"/>
+                <constraint firstItem="iHt-9n-fcZ" firstAttribute="trailing" secondItem="BLx-69-1lw" secondAttribute="trailing" id="WDA-55-f98"/>
+                <constraint firstItem="ROW-7W-PhN" firstAttribute="top" secondItem="Nxy-1M-AvT" secondAttribute="top" constant="3" id="WIV-nc-RKQ"/>
+                <constraint firstItem="iHt-9n-fcZ" firstAttribute="top" secondItem="Nxy-1M-AvT" secondAttribute="top" constant="4" id="Z9B-GY-dys"/>
+                <constraint firstItem="UK4-GA-IeO" firstAttribute="top" secondItem="Nxy-1M-AvT" secondAttribute="top" id="ZS5-6Q-APL"/>
+                <constraint firstItem="iHt-9n-fcZ" firstAttribute="bottom" secondItem="BLx-69-1lw" secondAttribute="bottom" id="eRF-6e-vjE"/>
+                <constraint firstItem="iHt-9n-fcZ" firstAttribute="top" secondItem="Nxy-1M-AvT" secondAttribute="top" constant="4" id="ejE-V9-pzk"/>
+                <constraint firstItem="Xes-aA-Hh1" firstAttribute="top" secondItem="Nxy-1M-AvT" secondAttribute="top" id="g0G-mj-YFU"/>
+                <constraint firstItem="ROW-7W-PhN" firstAttribute="top" secondItem="Nxy-1M-AvT" secondAttribute="top" constant="3" id="gMI-MW-bi4"/>
+                <constraint firstItem="Rrs-jo-HCs" firstAttribute="width" secondItem="nkQ-Rn-F8U" secondAttribute="width" id="hrz-Rc-jeM"/>
+                <constraint firstAttribute="bottom" secondItem="Xes-aA-Hh1" secondAttribute="bottom" id="j85-Rr-2Sq"/>
+                <constraint firstItem="ROW-7W-PhN" firstAttribute="leading" secondItem="UK4-GA-IeO" secondAttribute="trailing" constant="1.5" id="jPB-Aw-Chx"/>
+                <constraint firstItem="5uC-4L-SbV" firstAttribute="width" secondItem="nkQ-Rn-F8U" secondAttribute="width" id="kSe-nW-nIl"/>
+                <constraint firstItem="Xes-aA-Hh1" firstAttribute="centerX" secondItem="BLx-69-1lw" secondAttribute="centerX" id="m2v-AH-urE"/>
+                <constraint firstItem="fEG-b7-AE1" firstAttribute="centerX" secondItem="Nxy-1M-AvT" secondAttribute="centerX" id="mNF-pr-gfE"/>
+                <constraint firstAttribute="trailing" secondItem="BLx-69-1lw" secondAttribute="trailing" id="mQv-sG-Yj4"/>
+                <constraint firstItem="BLx-69-1lw" firstAttribute="centerY" secondItem="Nxy-1M-AvT" secondAttribute="centerY" id="rCg-jt-lyr"/>
+                <constraint firstItem="iHt-9n-fcZ" firstAttribute="top" secondItem="BLx-69-1lw" secondAttribute="top" id="rtc-Fq-ObW"/>
+                <constraint firstAttribute="bottom" secondItem="iHt-9n-fcZ" secondAttribute="bottom" constant="22" id="tld-bJ-srr"/>
+                <constraint firstItem="iHt-9n-fcZ" firstAttribute="leading" secondItem="BLx-69-1lw" secondAttribute="trailing" constant="-40" id="tsC-E2-jA1"/>
+                <constraint firstItem="5uC-4L-SbV" firstAttribute="centerY" secondItem="Nxy-1M-AvT" secondAttribute="centerY" id="yZk-R2-DTo"/>
+                <constraint firstItem="iHt-9n-fcZ" firstAttribute="leading" secondItem="BLx-69-1lw" secondAttribute="leading" id="yxN-sZ-Uxk"/>
+                <constraint firstItem="fEG-b7-AE1" firstAttribute="leading" secondItem="5uC-4L-SbV" secondAttribute="trailing" id="ztT-3p-QeC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="mNF-pr-gfE"/>
+                    <exclude reference="1Hq-Ua-89x"/>
+                    <exclude reference="gMI-MW-bi4"/>
+                    <exclude reference="O1r-Ha-fEk"/>
+                    <exclude reference="VcS-qz-c5v"/>
+                    <exclude reference="CER-mQ-dJM"/>
+                    <exclude reference="HMC-an-QlO"/>
+                    <exclude reference="NDl-XI-bjh"/>
+                    <exclude reference="WDA-55-f98"/>
+                    <exclude reference="Z9B-GY-dys"/>
+                    <exclude reference="eRF-6e-vjE"/>
+                    <exclude reference="rtc-Fq-ObW"/>
+                    <exclude reference="tld-bJ-srr"/>
+                    <exclude reference="tsC-E2-jA1"/>
+                    <exclude reference="yxN-sZ-Uxk"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="commentLabel" destination="iHt-9n-fcZ" id="wm9-Lv-evD"/>
+                <outlet property="voteNumberLabel" destination="ROW-7W-PhN" id="w8D-v6-Jej"/>
+            </connections>
+            <point key="canvasLocation" x="259" y="91"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Dark_News_Arrow" width="21" height="21"/>
+        <image name="Dark_News_Arrow_Highlight" width="21" height="21"/>
+        <image name="News_Navigation_Comment" width="64" height="43"/>
+        <image name="News_Navigation_Comment_Highlight" width="64" height="43"/>
+        <image name="News_Navigation_Next" width="64" height="43"/>
+        <image name="News_Navigation_Next_Highlight" width="64" height="43"/>
+        <image name="News_Navigation_Share" width="64" height="43"/>
+        <image name="News_Navigation_Share_Highlight" width="64" height="43"/>
+        <image name="News_Navigation_Vote" width="64" height="43"/>
+    </resources>
+</document>

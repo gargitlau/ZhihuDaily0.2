@@ -1,0 +1,7 @@
+platform :ios,'8.0'
+pod 'AFNetworking', '~> 2.6.1'
+pod 'SDWebImage', '~> 3.7.3'
+pod 'VGParallaxHeader', '~> 0.0.6'
+pod 'SWRevealViewController', '~> 2.3.0'
+pod 'ImagePlayerView', '~> 1.0.5'
+pod 'MJRefresh', '~> 3.0.1'
