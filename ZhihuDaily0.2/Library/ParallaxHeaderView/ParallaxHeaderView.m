@@ -81,12 +81,10 @@ static CGFloat defaultBlurViewAlpha = 0.5;
 }
 
 - (void)layoutDefaultViewWhenScroll:(CGFloat)delta {
-    if (self.bounds.size.height - delta > 0) {
-        CGRect rect = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
-        rect.origin.y += delta;
-        rect.size.height -= delta;
-        self.contentView.frame = rect;
-    }
+    CGRect rect = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
+    rect.origin.y += delta;
+    rect.size.height -= delta;
+    self.contentView.frame = rect;
 }
 
 - (void)layoutThumbViewWhenScroll:(CGFloat)delta {

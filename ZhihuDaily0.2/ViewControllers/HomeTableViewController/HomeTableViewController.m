@@ -49,9 +49,6 @@
     CGFloat _fakeNavigationbarAlpha;
     BOOL _isDraging;
     BOOL _shouldRefresh;
-    
-    CGFloat _orignRearViewRevealWidth;
-    CGFloat _orignRearViewRevealOverdraw;
 }
 
 - (void)viewDidLoad {
@@ -88,9 +85,6 @@
     
     [revealVC panGestureRecognizer];
     [revealVC tapGestureRecognizer];
-    
-    _orignRearViewRevealOverdraw = revealVC.rearViewRevealOverdraw;
-    _orignRearViewRevealWidth = revealVC.rearViewRevealWidth;
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu"] style:UIBarButtonItemStylePlain target:revealVC action:@selector(revealToggle:)];
     
@@ -175,10 +169,6 @@
  *  运行第二个启动页
  */
 - (void)runSecondLaunchScreen {
-    // 禁止启动页时能右滑显示菜单栏
-    self.revealViewController.rearViewRevealWidth = 0;
-    self.revealViewController.rearViewRevealOverdraw = 0;
-    
     self.navigationController.navigationBarHidden = YES;
     self.tableView.scrollEnabled = NO;
     _subViewControllerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
@@ -204,8 +194,6 @@
 
 - (void)dismissSecondLaunchScreen {
     if (_isLauncherAnimationCompleted == YES && _isLoadData == YES) {
-        self.revealViewController.rearViewRevealWidth = _orignRearViewRevealWidth;
-        self.revealViewController.rearViewRevealOverdraw = _orignRearViewRevealOverdraw;
         [UIView animateWithDuration:0.5 animations:^{
             _subViewControllerView.alpha = 0;
         } completion:^(BOOL finished) {
