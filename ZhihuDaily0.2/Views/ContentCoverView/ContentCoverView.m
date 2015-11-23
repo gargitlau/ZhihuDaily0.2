@@ -39,9 +39,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     self.imageView.center = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
-    if (self.frame.size.height > 20) {
-        _blur.frame = CGRectMake(0, self.frame.size.height - _blur.frame.size.height, _blur.frame.size.width, _blur.frame.size.height);
-    }
+    _blur.frame = CGRectMake(0, self.frame.size.height - _blur.frame.size.height, _blur.frame.size.width, _blur.frame.size.height);
 }
 
 @end
